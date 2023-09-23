@@ -1,0 +1,287 @@
+/*CSS reset settings here*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root{
+    --fondo: #245076;
+    --cont: #ffffff;
+    --footer: #ffffff;
+    --color_font: #000000;
+    --a: #000000;
+    --buttons: #245076;
+    --nav: #487ead;
+    --subray: #edc834;
+    --input-cont: #444444;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--a);
+}
+
+/* estilos de defaul type boostrap */
+
+.mg-main-h {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 98%;
+}
+
+.mg-main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 85%;
+}
+
+.flex-fit {
+    flex: 1;
+}
+
+.nav-sec{
+    justify-content: center;
+    padding: 10px 36px;
+    gap: 8px;
+}
+
+.nav-sec a{
+    margin-left: 5px;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.mg-lft-20 {
+    margin-left: 20px;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
+
+.mg-top-20 {
+    margin-top: 20px;
+}
+
+.mg-top-30 {
+    margin-top: 30px;
+}
+
+.mg-bt-10 {
+    margin-bottom: 10px;
+}
+
+.mg-bt-20 {
+    margin-bottom: 20px;
+}
+
+.mg-bt-30 {
+    margin-bottom: 30px;
+}
+
+.gp-30 {
+    gap: 30px;
+}
+
+.gp-20 {
+    gap: 15px;
+}
+
+.button-cont {
+    justify-content: center;
+}
+
+.buttons {
+    padding: 10px 15px;
+    color: var(--cont);
+    border: 1px solid var(--cont);
+    background: var(--buttons);
+    border-radius: 10px;
+    font-family: poppins;
+    text-align: center;
+}
+
+.list-item{
+    list-style: none;
+    margin: 20px 0px 20px 0px;
+}
+
+.list-item li{
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.subray{
+    color: var(--subray);
+}
+
+.subray-az{
+    color: var(--nav);
+}
+
+.shadow{
+    box-shadow:  2px 2px 2px #000000,
+    -5px -5px 5px #00000000;
+}
+
+/* cont principal  */
+.wrapper {
+    background-color: var(--fondo);
+    color: var(--color_font);
+    font-family: poppins;
+}
+
+/* cabezera */
+header {
+    background: transparent;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 500px;
+}
+
+.nav-section{
+    width: 86%;
+    margin: auto;
+    justify-content: space-around;
+    /* margin-left: 60px; */
+    background: var(--nav);
+    color: white;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 0px 40px;
+}
+.nav-section span{
+    margin: 20px;
+}
+.search-cont-nav{
+    align-self: start;
+}
+
+.search-cont-nav span{
+    text-align: right;
+    margin-right: 55px;
+}
+
+.input-search{
+    background: var(--input-cont) ;
+    padding: 20px 50px;
+    border-radius: 12px;
+}
+
+.input-search input[type="search"]{
+    padding: 10px;
+}
+
+.input-search input[type="search"]::placeholder{
+    text-align: center;
+    font-family: poppins;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* contenedor izquierdo */
+.cont-p{
+    height: fit-content;
+    min-height: 400px;
+    text-align: center;
+    color: white;
+    justify-content: flex-start;
+}
+
+.cont-p-bck-w{
+    height: fit-content;
+    min-height: 340px;
+    text-align: center;
+    color: #000000;
+    border-top: 8px solid var(--nav);
+    /* border-radius: 10px 10px 10px 10px; */
+}
+
+.subcont{
+    width: 85%;
+}
+
+.subcont ul{
+    width: 70%;
+    margin-left:80px
+}
+
+.subcont ul li a{
+    color: var(--nav);
+}
+
+.bck-white{
+    background: white;
+}
+
+.cont-p img {
+    width: 100%;
+}
+
+.nav-sec a{
+    color:white;
+}
+
+/* pie de pagina */
+footer {
+    text-align: center;
+    background: transparent;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.636);
+}
+
+.icons-info {
+    font-size: 18px;
+    justify-content: center;
+    gap: 80px;
+}
+
+.item-icons {
+    display: flex;
+}
+
+footer img {
+    width: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .item-icons{
+        justify-content: center;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .nav img{
+        width: 300px;
+    }
+
+}
